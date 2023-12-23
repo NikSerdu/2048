@@ -49,10 +49,12 @@ window.addEventListener("load", () => {
 
 const summarize = (line) => {
   let newLine = line;
-  let zeroCount = 0;
+  newLine = newLine.filter((item) => item !== 0);
+  while (newLine.length !== line.length) {
+    newLine.push(0);
+  }
   for (let i = 0; i < newLine.length - 1; i++) {
     if (newLine[i] === newLine[i + 1]) {
-      zeroCount++;
       newLine[i] += newLine[i + 1];
       newLine[i + 1] = 0;
     }
