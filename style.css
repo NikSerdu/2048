@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.field {
+  border: 5px solid #bbada0;
+}
+
+.fieldItem {
+  padding: 25px;
+  font-size: 3em;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #595959;
+  font-weight: bold;
+  border: 5px solid #bbada0;
+}
+
+.fieldLine {
+  display: flex;
+  background: #cdc1b4;
+}
+
+@media screen and (max-width: 550px) {
+  .fieldItem {
+    height: 50px;
+    width: 50px;
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .fieldItem {
+    height: 20px;
+    width: 20px;
+    font-size: 1.8em;
+  }
+}
