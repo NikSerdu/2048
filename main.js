@@ -113,8 +113,7 @@ const getMax = () => {
 
 const getRandomNumber = () => {
   const numbers = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048];
-  const max = numbers.indexOf(getMax());
-  let rand = Math.floor(0 + Math.random() * max + 1);
+  let rand = Math.floor(0 + Math.random() * 2 + 1);
   return numbers[rand];
 };
 
