@@ -36,7 +36,9 @@ const initField = (fieldData) => {
   fieldData.forEach((line, i) => {
     let temp = "";
     line.forEach((item, j) => {
-      temp += `<div class="fieldItem" style="background-color:${colors[item]}">${item}</div>`;
+      temp += `<div class="fieldItem" style="background-color:${
+        colors[item]
+      };color:${item === 0 && "#cdc1b4"}">${item}</div>`;
     });
     html += `<div class='fieldLine'>${temp}</div>`;
   });
